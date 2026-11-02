@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Warm Artisan Cafe Material 3 Palette -->
-    <color name="cafe_primary">#5D4037</color>
-    <color name="cafe_primary_dark">#3E2723</color>
-    <color name="cafe_primary_container">#EFEBE9</color>
+    <!-- Boutique Artisan Cafe Palette (Anti-Slop, High Contrast & Warmth) -->
+    
+    <!-- Primary Brand: Dark Roast Espresso -->
+    <color name="cafe_espresso">#1A120B</color>
+    <color name="cafe_primary">#2B1B12</color>
+    <color name="cafe_primary_dark">#150C07</color>
     <color name="cafe_on_primary">#FFFFFF</color>
     
-    <color name="cafe_secondary">#D97736</color>
-    <color name="cafe_secondary_light">#FBE9E7</color>
-    <color name="cafe_secondary_container">#FFCCBC</color>
+    <!-- Accent Caramel / Roasted Amber -->
+    <color name="cafe_caramel">#C67C4E</color>
+    <color name="cafe_caramel_light">#F8ECE3</color>
+    <color name="cafe_caramel_dark">#9D5728</color>
     
-    <color name="cafe_background">#FCFBF9</color>
+    <!-- Neutral Canvas: Warm Oat Milk / Cream -->
+    <color name="cafe_background">#F8F5F0</color>
     <color name="cafe_surface">#FFFFFF</color>
-    <color name="cafe_surface_variant">#F5F2EB</color>
+    <color name="cafe_surface_subtle">#F3ECE2</color>
+    <color name="cafe_surface_card">#FFFFFF</color>
     
-    <color name="cafe_text_primary">#1C1917</color>
-    <color name="cafe_text_secondary">#78716C</color>
-    <color name="cafe_text_hint">#A8A29E</color>
-    <color name="cafe_border">#E7E2DA</color>
+    <!-- Borders & Dividers -->
+    <color name="cafe_border">#E5DDD3</color>
+    <color name="cafe_border_focused">#C67C4E</color>
     
-    <color name="cafe_success">#2E7D32</color>
+    <!-- High-Legibility Typography -->
+    <color name="cafe_text_title">#1A120B</color>
+    <color name="cafe_text_body">#3C332D</color>
+    <color name="cafe_text_muted">#7C7167</color>
+    <color name="cafe_text_placeholder">#A99F95</color>
+    
+    <!-- Fresh Confirmation Green (Matches Wireframe OK Badge) -->
+    <color name="cafe_ok_circle">#A3E7C9</color>
+    <color name="cafe_ok_circle_border">#72D6A7</color>
+    <color name="cafe_ok_text">#155738</color>
+    <color name="cafe_success">#2D6A4F</color>
     <color name="cafe_success_container">#E8F5E9</color>
-    <color name="cafe_success_light">#A5D6A7</color>
     
-    <color name="cafe_badge_bg">#FFF3E0</color>
-    <color name="cafe_badge_text">#E65100</color>
+    <!-- Category & Badge Accents -->
+    <color name="cafe_badge_bg">#FBF0E6</color>
+    <color name="cafe_badge_text">#A35624</color>
+    <color name="cafe_star">#F59E0B</color>
     
-    <color name="cafe_card_selected">#F7EFE9</color>
-    <color name="cafe_star">#FFB300</color>
-    
+    <!-- Essentials -->
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="transparent">#00000000</color>

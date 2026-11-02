@@ -2,7 +2,9 @@ package com.example.caffeshop.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.caffeshop.R
 import com.example.caffeshop.data.model.OrderModel
 import com.example.caffeshop.databinding.ItemOrderHistoryBinding
 import com.example.caffeshop.util.CurrencyHelper
@@ -34,9 +36,25 @@ class OrderHistoryAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(order: OrderModel) {
+            val context = binding.root.context
             binding.tvHistoryOrderId.text = order.orderId
             binding.tvHistoryDate.text = order.orderDate
             binding.tvHistoryStatus.text = order.status
+
+            if (order.status.contains("Selesai", ignoreCase = true)) {
+                binding.tvHistoryStatus.backgroundTintList =
+                    ContextCompat.getColorStateList(context, R.color.cafe_success_container)
+                binding.tvHistoryStatus.setTextColor(
+                    ContextCompat.getColor(context, R.color.cafe_success)
+                )
+            } else {
+                binding.tvHistoryStatus.backgroundTintList =
+                    ContextCompat.getColorStateList(context, R.color.cafe_badge_bg)
+                binding.tvHistoryStatus.setTextColor(
+                    ContextCompat.getColor(context, R.color.cafe_caramel)
+                )
+            }
+
             binding.tvHistoryItems.text = order.itemsSummary
             binding.tvHistoryTotal.text = "Total: " + CurrencyHelper.formatRupiah(order.totalAmount)
 

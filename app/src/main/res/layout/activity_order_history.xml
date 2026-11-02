@@ -10,7 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:paddingStart="20dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="24dp">
 
         <!-- Top Header -->
         <LinearLayout
@@ -21,21 +24,22 @@
 
             <ImageView
                 android:id="@+id/btnBackHistory"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Kembali"
-                android:padding="12dp"
+                android:padding="10dp"
                 android:src="@drawable/ic_arrow_back" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="serif"
                 android:text="@string/btn_history"
-                android:textColor="@color/cafe_text_primary"
-                android:textSize="22sp" />
+                android:textColor="@color/cafe_text_title"
+                android:textSize="22sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Order List -->

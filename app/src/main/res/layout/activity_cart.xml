@@ -17,7 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingStart="20dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
 
             <!-- Top Header -->
             <LinearLayout
@@ -28,11 +31,11 @@
 
                 <ImageView
                     android:id="@+id/btnBackCart"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Kembali"
-                    android:padding="12dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_arrow_back" />
 
                 <TextView
@@ -40,10 +43,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="serif"
                     android:text="@string/cart_title"
-                    android:textColor="@color/cafe_text_primary"
-                    android:textSize="22sp" />
+                    android:textColor="@color/cafe_text_title"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/btnClearCart"
@@ -55,7 +59,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:padding="8dp"
                     android:text="Hapus Semua"
-                    android:textColor="#D32F2F"
+                    android:textColor="#C62828"
                     android:textSize="13sp" />
             </LinearLayout>
 
@@ -89,10 +93,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="serif"
                     android:text="@string/cart_empty_title"
-                    android:textColor="@color/cafe_text_primary"
-                    android:textSize="18sp" />
+                    android:textColor="@color/cafe_text_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,7 +105,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="sans-serif"
                     android:text="@string/cart_empty_desc"
-                    android:textColor="@color/cafe_text_secondary"
+                    android:textColor="@color/cafe_text_muted"
                     android:textSize="14sp" />
 
                 <com.google.android.material.button.MaterialButton
@@ -122,7 +127,7 @@
                 android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/cafe_surface"
                 app:cardCornerRadius="14dp"
-                app:cardElevation="1dp"
+                app:cardElevation="0.5dp"
                 app:strokeColor="@color/cafe_border"
                 app:strokeWidth="1dp">
 
@@ -143,8 +148,8 @@
                         android:hint="@string/promo_code_hint"
                         android:inputType="textCapCharacters"
                         android:maxLines="1"
-                        android:textColor="@color/cafe_text_primary"
-                        android:textColorHint="@color/cafe_text_hint"
+                        android:textColor="@color/cafe_text_title"
+                        android:textColorHint="@color/cafe_text_placeholder"
                         android:textSize="13sp" />
 
                     <com.google.android.material.button.MaterialButton
@@ -152,12 +157,12 @@
                         style="@style/Widget.Material3.Button.TonalButton"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:backgroundTint="@color/cafe_secondary_light"
+                        android:backgroundTint="@color/cafe_caramel_light"
                         android:fontFamily="sans-serif-bold"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
                         android:text="@string/btn_apply_promo"
-                        android:textColor="@color/cafe_secondary"
+                        android:textColor="@color/cafe_caramel"
                         android:textSize="12sp"
                         app:cornerRadius="10dp" />
                 </LinearLayout>
@@ -191,7 +196,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Subtotal"
-                            android:textColor="@color/cafe_text_secondary"
+                            android:textColor="@color/cafe_text_muted"
                             android:textSize="14sp" />
 
                         <TextView
@@ -199,7 +204,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-bold"
-                            android:textColor="@color/cafe_text_primary"
+                            android:textColor="@color/cafe_text_title"
                             android:textSize="14sp"
                             tools:text="Rp 44.000" />
                     </LinearLayout>
@@ -215,7 +220,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/delivery_fee"
-                            android:textColor="@color/cafe_text_secondary"
+                            android:textColor="@color/cafe_text_muted"
                             android:textSize="14sp" />
 
                         <TextView
@@ -223,7 +228,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-bold"
-                            android:textColor="@color/cafe_text_primary"
+                            android:textColor="@color/cafe_text_title"
                             android:textSize="14sp"
                             tools:text="Rp 10.000" />
                     </LinearLayout>
@@ -273,15 +278,15 @@
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-bold"
                             android:text="@string/total_payment"
-                            android:textColor="@color/cafe_text_primary"
-                            android:textSize="16sp" />
+                            android:textColor="@color/cafe_text_title"
+                            android:textSize="15sp" />
 
                         <TextView
                             android:id="@+id/tvCartTotalPayment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:textColor="@color/cafe_secondary"
+                            android:textColor="@color/cafe_caramel"
                             android:textSize="18sp"
                             tools:text="Rp 54.000" />
                     </LinearLayout>

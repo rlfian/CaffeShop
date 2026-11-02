@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="6dp"
-    android:layout_marginBottom="6dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     app:cardBackgroundColor="@color/cafe_surface"
-    app:cardCornerRadius="14dp"
+    app:cardCornerRadius="16dp"
     app:cardElevation="1dp"
     app:strokeColor="@color/cafe_border"
     app:strokeWidth="1dp">
@@ -29,22 +29,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
-                android:textColor="@color/cafe_text_primary"
-                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textColor="@color/cafe_text_title"
+                android:textSize="15.5sp"
+                android:textStyle="bold"
                 tools:text="#CS-82910" />
 
             <TextView
                 android:id="@+id/tvHistoryStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_check_circle"
+                android:background="@drawable/bg_badge_tag"
                 android:backgroundTint="@color/cafe_success_container"
                 android:fontFamily="sans-serif-bold"
                 android:paddingStart="8dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingEnd="8dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:textColor="@color/cafe_success"
                 android:textSize="11sp"
                 tools:text="Selesai" />
@@ -56,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:fontFamily="sans-serif"
-            android:textColor="@color/cafe_text_secondary"
+            android:textColor="@color/cafe_text_muted"
             android:textSize="12sp"
             tools:text="Kemarin, 14:30 WIB" />
 
@@ -66,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-medium"
-            android:textColor="@color/cafe_text_primary"
+            android:textColor="@color/cafe_text_body"
             android:textSize="14sp"
             tools:text="2x Kopi Susu Gula Aren, 1x Donat Cokelat" />
 
@@ -89,22 +90,22 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
-                android:textColor="@color/cafe_secondary"
+                android:textColor="@color/cafe_caramel"
                 android:textSize="15sp"
                 tools:text="Total: Rp 56.000" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnHistoryReorder"
-                style="@style/Widget.Material3.Button.TonalButton"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:backgroundTint="@color/cafe_primary_container"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/cafe_espresso"
                 android:fontFamily="sans-serif-bold"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="Pesan Lagi"
-                android:textColor="@color/cafe_primary"
-                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textSize="11.5sp"
                 app:cornerRadius="10dp" />
         </LinearLayout>
     </LinearLayout>

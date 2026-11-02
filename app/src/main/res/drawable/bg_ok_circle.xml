@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Soft Ring -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#D1F2E3" />
+            <size android:width="120dp" android:height="120dp" />
+        </shape>
+    </item>
+    <!-- Inner Mint Circle with Border -->
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/cafe_ok_circle" />
+            <stroke android:width="2.5dp" android:color="@color/cafe_ok_circle_border" />
+        </shape>
+    </item>
+</layer-list>

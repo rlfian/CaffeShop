@@ -15,7 +15,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:paddingStart="24dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="36dp">
 
             <!-- Top Header -->
             <LinearLayout
@@ -26,21 +29,22 @@
 
                 <ImageView
                     android:id="@+id/btnBackTracking"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Kembali"
-                    android:padding="12dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_arrow_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="serif"
                     android:text="@string/tracking_title"
-                    android:textColor="@color/cafe_text_primary"
-                    android:textSize="24sp" />
+                    android:textColor="@color/cafe_text_title"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <!-- ETA Card -->
@@ -50,7 +54,7 @@
                 android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/cafe_surface"
                 app:cardCornerRadius="18dp"
-                app:cardElevation="2dp"
+                app:cardElevation="1dp"
                 app:strokeColor="@color/cafe_border"
                 app:strokeWidth="1dp">
 
@@ -63,9 +67,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="sans-serif-medium"
                         android:text="Estimasi Pesanan Tiba"
-                        android:textColor="@color/cafe_text_secondary"
+                        android:textColor="@color/cafe_text_muted"
                         android:textSize="13sp" />
 
                     <TextView
@@ -74,7 +78,7 @@
                         android:layout_marginTop="4dp"
                         android:fontFamily="sans-serif-black"
                         android:text="15 - 20 Menit"
-                        android:textColor="@color/cafe_secondary"
+                        android:textColor="@color/cafe_caramel"
                         android:textSize="26sp" />
 
                     <TextView
@@ -83,7 +87,7 @@
                         android:layout_marginTop="4dp"
                         android:fontFamily="sans-serif"
                         android:text="Kurir kami sedang menuju alamat pengirimanmu."
-                        android:textColor="@color/cafe_text_primary"
+                        android:textColor="@color/cafe_text_title"
                         android:textSize="14sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -95,7 +99,7 @@
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="@color/cafe_surface"
                 app:cardCornerRadius="18dp"
-                app:cardElevation="2dp"
+                app:cardElevation="1dp"
                 app:strokeColor="@color/cafe_border"
                 app:strokeWidth="1dp">
 
@@ -110,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-bold"
                         android:text="Status Pemesanan"
-                        android:textColor="@color/cafe_text_primary"
+                        android:textColor="@color/cafe_text_title"
                         android:textSize="16sp" />
 
                     <!-- Step 1 -->
@@ -122,8 +126,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:src="@drawable/ic_check_circle" />
 
                         <TextView
@@ -132,7 +136,7 @@
                             android:layout_marginStart="14dp"
                             android:fontFamily="sans-serif-medium"
                             android:text="@string/step_received"
-                            android:textColor="@color/cafe_text_primary"
+                            android:textColor="@color/cafe_text_title"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -145,8 +149,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:src="@drawable/ic_check_circle" />
 
                         <TextView
@@ -155,7 +159,7 @@
                             android:layout_marginStart="14dp"
                             android:fontFamily="sans-serif-medium"
                             android:text="@string/step_preparing"
-                            android:textColor="@color/cafe_text_primary"
+                            android:textColor="@color/cafe_text_title"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -168,8 +172,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
                             android:src="@drawable/ic_check_circle" />
 
                         <TextView
@@ -178,7 +182,7 @@
                             android:layout_marginStart="14dp"
                             android:fontFamily="sans-serif-bold"
                             android:text="@string/step_delivering"
-                            android:textColor="@color/cafe_secondary"
+                            android:textColor="@color/cafe_caramel"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -191,9 +195,9 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:alpha="0.3"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:alpha="0.25"
                             android:src="@drawable/ic_check_circle" />
 
                         <TextView
@@ -202,7 +206,7 @@
                             android:layout_marginStart="14dp"
                             android:fontFamily="sans-serif"
                             android:text="@string/step_completed"
-                            android:textColor="@color/cafe_text_secondary"
+                            android:textColor="@color/cafe_text_muted"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -215,7 +219,7 @@
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="@color/cafe_surface"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
+                app:cardElevation="1dp"
                 app:strokeColor="@color/cafe_border"
                 app:strokeWidth="1dp">
 
@@ -226,14 +230,20 @@
                     android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <ImageView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_check_circle"
-                        android:backgroundTint="@color/cafe_primary_container"
-                        android:contentDescription="Kurir"
-                        android:padding="10dp"
-                        android:src="@drawable/ic_order" />
+                        app:cardBackgroundColor="@color/cafe_surface_subtle"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Kurir"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_order" />
+                    </com.google.android.material.card.MaterialCardView>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -247,7 +257,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-bold"
                             android:text="Andi Pratama"
-                            android:textColor="@color/cafe_text_primary"
+                            android:textColor="@color/cafe_text_title"
                             android:textSize="15sp" />
 
                         <TextView
@@ -256,7 +266,7 @@
                             android:layout_marginTop="2dp"
                             android:fontFamily="sans-serif"
                             android:text="Kurir Resmi Caffe Shop • Honda Vario Hitam"
-                            android:textColor="@color/cafe_text_secondary"
+                            android:textColor="@color/cafe_text_muted"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -269,7 +279,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:layout_marginBottom="32dp"
                 android:text="Kembali ke Beranda" />
 
         </LinearLayout>

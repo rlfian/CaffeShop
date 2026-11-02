@@ -9,14 +9,17 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="84dp"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:paddingStart="24dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
 
             <!-- Top Bar -->
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,11 +28,11 @@
 
                 <ImageView
                     android:id="@+id/btnBackDetail"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Kembali"
-                    android:padding="12dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_arrow_back"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +41,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="serif"
                     android:text="@string/title_detail_menu"
-                    android:textColor="@color/cafe_text_primary"
+                    android:textColor="@color/cafe_text_title"
                     android:textSize="20sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +53,11 @@
 
                 <ImageView
                     android:id="@+id/ivDetailFavorite"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Favorit"
-                    android:padding="12dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_heart"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -63,11 +67,11 @@
             <!-- Big Image Container -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="210dp"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="@color/cafe_surface_variant"
+                app:cardBackgroundColor="@color/cafe_surface_subtle"
                 app:cardCornerRadius="24dp"
-                app:cardElevation="2dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/cafe_border"
                 app:strokeWidth="1dp">
 
@@ -93,9 +97,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif-black"
-                    android:textColor="@color/cafe_text_primary"
+                    android:fontFamily="serif"
+                    android:textColor="@color/cafe_text_title"
                     android:textSize="22sp"
+                    android:textStyle="bold"
                     tools:text="Kopi Susu Gula Aren" />
 
                 <TextView
@@ -103,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-bold"
-                    android:textColor="@color/cafe_text_primary"
+                    android:textColor="@color/cafe_text_title"
                     android:textSize="14sp"
                     tools:text="⭐ 4.9 (312)" />
             </LinearLayout>
@@ -113,9 +118,9 @@
                 android:id="@+id/tvDetailPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="4dp"
                 android:fontFamily="sans-serif-black"
-                android:textColor="@color/cafe_secondary"
+                android:textColor="@color/cafe_caramel"
                 android:textSize="20sp"
                 tools:text="Rp 22.000" />
 
@@ -124,10 +129,10 @@
                 android:id="@+id/tvDetailDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif"
-                android:lineSpacingExtra="4dp"
-                android:textColor="@color/cafe_text_secondary"
+                android:lineSpacingMultiplier="1.25"
+                android:textColor="@color/cafe_text_muted"
                 android:textSize="14sp"
                 tools:text="Espresso, susu, gula aren organik. Diracik oleh barista berpengalaman untuk rasa autentik yang manis dan creamy." />
 
@@ -144,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-bold"
                 android:text="@string/temperature_choice"
-                android:textColor="@color/cafe_text_primary"
+                android:textColor="@color/cafe_text_title"
                 android:textSize="15sp" />
 
             <RadioGroup
@@ -160,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:text="@string/temp_iced"
-                    android:textColor="@color/cafe_text_primary" />
+                    android:textColor="@color/cafe_text_body" />
 
                 <RadioButton
                     android:id="@+id/rbHot"
@@ -168,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:text="@string/temp_hot"
-                    android:textColor="@color/cafe_text_primary" />
+                    android:textColor="@color/cafe_text_body" />
             </RadioGroup>
 
             <!-- Sugar Level -->
@@ -178,7 +183,7 @@
                 android:layout_marginTop="14dp"
                 android:fontFamily="sans-serif-bold"
                 android:text="@string/sugar_level"
-                android:textColor="@color/cafe_text_primary"
+                android:textColor="@color/cafe_text_title"
                 android:textSize="15sp" />
 
             <RadioGroup
@@ -194,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:text="@string/sugar_normal"
-                    android:textColor="@color/cafe_text_primary" />
+                    android:textColor="@color/cafe_text_body" />
 
                 <RadioButton
                     android:id="@+id/rbLessSugar"
@@ -202,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/sugar_less"
-                    android:textColor="@color/cafe_text_primary" />
+                    android:textColor="@color/cafe_text_body" />
             </RadioGroup>
 
             <!-- Quantity Counter -->
@@ -212,7 +217,7 @@
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-bold"
                 android:text="Jumlah Porsi"
-                android:textColor="@color/cafe_text_primary"
+                android:textColor="@color/cafe_text_title"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -227,10 +232,12 @@
                     style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
+                    android:backgroundTint="@color/cafe_surface_subtle"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:padding="0dp"
                     android:text="-"
+                    android:textColor="@color/cafe_espresso"
                     android:textSize="18sp"
                     app:cornerRadius="12dp" />
 
@@ -241,7 +248,7 @@
                     android:fontFamily="sans-serif-black"
                     android:gravity="center"
                     android:text="1"
-                    android:textColor="@color/cafe_text_primary"
+                    android:textColor="@color/cafe_text_title"
                     android:textSize="18sp" />
 
                 <com.google.android.material.button.MaterialButton
@@ -249,10 +256,12 @@
                     style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
+                    android:backgroundTint="@color/cafe_surface_subtle"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:padding="0dp"
                     android:text="+"
+                    android:textColor="@color/cafe_espresso"
                     android:textSize="18sp"
                     app:cornerRadius="12dp" />
             </LinearLayout>

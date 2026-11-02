@@ -197,17 +197,21 @@ Untuk memverifikasi kelengkapan dan kebenaran alur aplikasi, ikuti langkah berik
 
 ## 🎨 Galeri Tangkapan Layar (Screenshots)
 
+### Layar Utama Wireframe (8 Layar Wajib)
+
 | 1. Splash / Welcome | 2. Sign Up Gateway | 3. Login User | 4. Register |
 |:---:|:---:|:---:|:---:|
-| *(Screenshot Splash)* | *(Screenshot Gateway)* | *(Screenshot Login)* | *(Screenshot Register)* |
+| <img src="screenshots/01_splash.png" width="220" alt="Splash Screen"/> | <img src="screenshots/02_gateway.png" width="220" alt="Sign Up Gateway"/> | <img src="screenshots/03_login.png" width="220" alt="Login User"/> | <img src="screenshots/04_register.png" width="220" alt="Register Member"/> |
 
-| 5. Home Menu | 6. Profile & Edit | 7. Alamat Pengiriman | 8. Konfirmasi Pesanan |
+| 5. Home Menu | 6. Profile & Setting | 7. Alamat Pengiriman | 8. Konfirmasi Pesanan |
 |:---:|:---:|:---:|:---:|
-| *(Screenshot Home)* | *(Screenshot Profile)* | *(Screenshot Alamat)* | *(Screenshot Konfirmasi)* |
+| <img src="screenshots/05_home.png" width="220" alt="Home Menu"/> | <img src="screenshots/06_profile.png" width="220" alt="Profile Setting"/> | <img src="screenshots/07_order.png" width="220" alt="Alamat Pengiriman"/> | <img src="screenshots/08_confirmation.png" width="220" alt="Konfirmasi Pesanan"/> |
 
-| 9. Detail Menu | 10. Keranjang Belanja | 11. Pelacakan Kurir | 12. Riwayat Pesanan |
-|:---:|:---:|:---:|:---:|
-| *(Screenshot Detail)* | *(Screenshot Cart)* | *(Screenshot Tracking)* | *(Screenshot History)* |
+### Fitur Kustomisasi & Nilai Tambah Ekstra
+
+| 9. Detail Menu | 10. Keranjang Belanja | 11. Pelacakan Kurir | 12. Riwayat Transaksi | 13. Bantuan & FAQ |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="screenshots/09_detail_menu.png" width="180" alt="Detail Menu"/> | <img src="screenshots/10_cart.png" width="180" alt="Keranjang Belanja"/> | <img src="screenshots/11_tracking.png" width="180" alt="Pelacakan Kurir"/> | <img src="screenshots/12_order_history.png" width="180" alt="Riwayat Pesanan"/> | <img src="screenshots/13_help.png" width="180" alt="Bantuan & Info Kafe"/> |
 
 ---
 

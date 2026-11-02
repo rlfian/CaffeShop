@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="6dp"
-    android:layout_marginBottom="6dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     app:cardBackgroundColor="@color/cafe_surface"
     app:cardCornerRadius="14dp"
-    app:cardElevation="1dp"
+    app:cardElevation="0.5dp"
     app:strokeColor="@color/cafe_border"
     app:strokeWidth="1dp">
 
@@ -17,19 +17,26 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
 
-        <!-- Image -->
-        <ImageView
-            android:id="@+id/ivCartFoodImg"
+        <!-- Image Holder -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCartFoodHolder"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:background="@drawable/ic_check_circle"
-            android:backgroundTint="@color/cafe_surface_variant"
-            android:contentDescription="Menu"
-            android:padding="8dp"
-            android:src="@drawable/ic_coffee_cup"
+            app:cardBackgroundColor="@color/cafe_surface_subtle"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivCartFoodImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Menu"
+                android:padding="8dp"
+                android:src="@drawable/ic_coffee_cup" />
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Name -->
         <TextView
@@ -39,10 +46,10 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="8dp"
             android:fontFamily="sans-serif-bold"
-            android:textColor="@color/cafe_text_primary"
+            android:textColor="@color/cafe_text_title"
             android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@+id/btnCartDelete"
-            app:layout_constraintStart_toEndOf="@+id/ivCartFoodImg"
+            app:layout_constraintStart_toEndOf="@+id/cardCartFoodHolder"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Kopi Susu Gula Aren" />
 
@@ -54,10 +61,10 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="2dp"
             android:fontFamily="sans-serif"
-            android:textColor="@color/cafe_text_secondary"
+            android:textColor="@color/cafe_text_muted"
             android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/btnCartDelete"
-            app:layout_constraintStart_toEndOf="@+id/ivCartFoodImg"
+            app:layout_constraintStart_toEndOf="@+id/cardCartFoodHolder"
             app:layout_constraintTop_toBottomOf="@+id/tvCartFoodName"
             tools:text="Iced • Normal Sugar" />
 
@@ -69,10 +76,10 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-black"
-            android:textColor="@color/cafe_secondary"
+            android:textColor="@color/cafe_caramel"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ivCartFoodImg"
+            app:layout_constraintStart_toEndOf="@+id/cardCartFoodHolder"
             app:layout_constraintTop_toBottomOf="@+id/tvCartOptions"
             tools:text="Rp 22.000" />
 
@@ -102,10 +109,12 @@
                 style="@style/Widget.Material3.Button.TonalButton"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:backgroundTint="@color/cafe_surface_subtle"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:padding="0dp"
                 android:text="-"
+                android:textColor="@color/cafe_espresso"
                 android:textSize="14sp"
                 app:cornerRadius="8dp" />
 
@@ -116,7 +125,7 @@
                 android:fontFamily="sans-serif-bold"
                 android:gravity="center"
                 android:text="1"
-                android:textColor="@color/cafe_text_primary"
+                android:textColor="@color/cafe_text_title"
                 android:textSize="14sp" />
 
             <com.google.android.material.button.MaterialButton
@@ -124,10 +133,12 @@
                 style="@style/Widget.Material3.Button.TonalButton"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:backgroundTint="@color/cafe_surface_subtle"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:padding="0dp"
                 android:text="+"
+                android:textColor="@color/cafe_espresso"
                 android:textSize="14sp"
                 app:cornerRadius="8dp" />
         </LinearLayout>
