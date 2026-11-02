@@ -169,9 +169,9 @@ Untuk memverifikasi kelengkapan dan kebenaran alur aplikasi, ikuti langkah berik
 
 1. **Layar 1 (Splash/Welcome)**: Buka aplikasi, muncul logo kopi elegan dan slogan *"Get a taste of your wish"*. Klik tombol **"Start now"**.
 2. **Layar 2 (Sign Up Gateway)**: Tampil layar selamat datang dengan dua opsi. Klik **"Register"** untuk mendaftar akun baru (atau **"Login"** jika ingin langsung masuk).
-3. **Layar 4 (Register)**: Masukkan nama lengkap (contoh: `Robby Hertansyah`), username (`robby`), dan password (`123456`). Klik tombol **"Register"**.
+3. **Layar 4 (Register)**: Masukkan nama lengkap (contoh: `Rio Alfian`), username (`rio`), dan password (`123456`). Klik tombol **"Register"**.
 4. **Layar 5 (Home)**: 
-   - Perhatikan header yang menyapa nama Anda secara otomatis: **"Halo Robby Hertansyah,"**.
+   - Perhatikan header yang menyapa nama Anda secara otomatis: **"Halo Rio Alfian,"** (atau nama yang didaftarkan).
    - Coba ketik kata `"donat"` pada search bar $\rightarrow$ daftar menu tersaring otomatis.
    - Coba klik filter chip `"Kopi"` atau `"Nyemil"` $\rightarrow$ kategori berubah mulus.
    - Klik salah satu menu untuk melihat **Layar 9 (Detail Menu)** atau klik tombol **"Pesan"** pada kartu.
@@ -180,18 +180,18 @@ Untuk memverifikasi kelengkapan dan kebenaran alur aplikasi, ikuti langkah berik
    - Masukkan kode voucher promo: `DISKONKOPI` lalu klik **"Gunakan"** $\rightarrow$ potongan Rp 10.000 berhasil diaplikasikan!
    - Klik **"Lanjut ke Pengiriman"**.
 6. **Layar 7 (Alamat Pengiriman)**:
-   - Nama penerima otomatis terisi nama Anda (`Robby Hertansyah`).
+   - Nama penerima otomatis terisi nama Anda (`Rio Alfian`).
    - Masukkan alamat rumah (contoh: `Jl. Melati No. 42`) dan patokan (contoh: `Pagar hitam depan pos`).
    - Pilih metode pembayaran (QRIS / Tunai COD / Transfer Bank).
    - Klik **"Order dan Kirim"**.
 7. **Layar 8 (Konfirmasi Pesanan)**:
-   - Tampil header **"Halo Robby Hertansyah,"**, badge centang hijau **"OK"**, dan pesan kurir.
+   - Tampil header **"Halo Rio Alfian,"**, badge centang hijau **"OK"**, dan pesan kurir.
    - Klik tombol **"Lacak Status Kurir"** untuk melihat progress timeline pengantaran di **Layar 11**.
    - Klik tombol **"Oke"** $\rightarrow$ aplikasi kembali ke layar Home dengan bersih.
 8. **Layar 6 (Profile)**:
    - Klik tab **Profile** pada Bottom Navigation.
-   - Tampil nama Anda pada field edit nama. Ubah menjadi nama panggilan (contoh: `Robby Coffee`).
-   - Klik tombol **"Save"** $\rightarrow$ notifikasi *"Profil berhasil disimpan!"* muncul dan sapaan langsung terbarui menjadi **"Halo Robby Coffee,"** di seluruh layar aplikasi!
+   - Tampil nama Anda pada field edit nama. Ubah menjadi nama panggilan (contoh: `Rio Coffee`).
+   - Klik tombol **"Save"** $\rightarrow$ notifikasi *"Profil berhasil disimpan!"* muncul dan sapaan langsung terbarui menjadi **"Halo Rio Coffee,"** di seluruh layar aplikasi!
    - Klik **"Riwayat Pesanan"** untuk melihat rekap transaksi di **Layar 12**.
    - Klik **"Logout"** jika ingin keluar kembali ke halaman awal.
 
