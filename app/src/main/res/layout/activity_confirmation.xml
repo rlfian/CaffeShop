@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cafe_background"
+    android:padding="28dp">
+
+    <!-- Top Greeting "Halo Nama," (Matches Wireframe) -->
+    <TextView
+        android:id="@+id/tvConfirmGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/cafe_text_primary"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Halo Budi," />
+
+    <!-- Center Confirmation Group -->
+    <LinearLayout
+        android:id="@+id/confirmCenterGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButtonGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmGreeting">
+
+        <!-- Green Circle "OK" Badge (Matches Wireframe) -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/ivOkBadge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="OK Badge"
+                android:src="@drawable/ic_check_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/confirmation_ok"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- Message from Wireframe -->
+        <TextView
+            android:id="@+id/tvConfirmMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/confirmation_message"
+            android:textColor="@color/cafe_text_primary"
+            android:textSize="17sp" />
+
+        <!-- Order Estimate Tag -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEstimate"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/estimated_time"
+            android:textColor="@color/cafe_secondary"
+            app:chipBackgroundColor="@color/cafe_secondary_light"
+            app:chipStrokeWidth="0dp" />
+
+    </LinearLayout>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/confirmButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Track Courier Button (Extended) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTrackOrder"
+            style="@style/Widget.CaffeShop.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/btn_track_order" />
+
+        <!-- Oke Button (Filled Black - Matches Wireframe) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmOke"
+            style="@style/Widget.CaffeShop.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_oke" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

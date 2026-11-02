@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_coffee_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_coffee_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaffeShop"
+        tools:targetApi="31">
+
+        <!-- Screen 1: Splash / Welcome (Launcher) -->
+        <activity
+            android:name=".ui.auth.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Screen 2: Sign Up Gateway -->
+        <activity
+            android:name=".ui.auth.AuthGatewayActivity"
+            android:exported="false" />
+
+        <!-- Screen 3: Login User -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="false" />
+
+        <!-- Screen 4: Register -->
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Screen 5: Home -->
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false" />
+
+        <!-- Screen 6: Profile -->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Screen 7: Alamat Pengiriman (Order) -->
+        <activity
+            android:name=".ui.order.OrderActivity"
+            android:exported="false" />
+
+        <!-- Screen 8: Konfirmasi Pesanan -->
+        <activity
+            android:name=".ui.order.ConfirmationActivity"
+            android:exported="false" />
+
+        <!-- Screen 9: Detail Menu (Extended) -->
+        <activity
+            android:name=".ui.home.DetailMenuActivity"
+            android:exported="false" />
+
+        <!-- Screen 10: Keranjang Belanja (Extended) -->
+        <activity
+            android:name=".ui.cart.CartActivity"
+            android:exported="false" />
+
+        <!-- Screen 11: Pelacakan Kurir (Extended) -->
+        <activity
+            android:name=".ui.order.OrderTrackingActivity"
+            android:exported="false" />
+
+        <!-- Screen 12: Riwayat Pesanan (Extended) -->
+        <activity
+            android:name=".ui.profile.OrderHistoryActivity"
+            android:exported="false" />
+
+        <!-- Screen 13: Bantuan & Info Kafe (Extended) -->
+        <activity
+            android:name=".ui.help.HelpActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

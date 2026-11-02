@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cafe_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header "Halo Nama," -->
+            <TextView
+                android:id="@+id/tvProfileGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/cafe_text_primary"
+                android:textSize="26sp"
+                tools:text="Halo Budi," />
+
+            <!-- Subtitle "Profile Saya" -->
+            <TextView
+                android:id="@+id/tvProfileSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/profile_saya"
+                android:textColor="@color/cafe_text_primary"
+                android:textSize="20sp" />
+
+            <!-- Setting Label "Profile Setting" -->
+            <TextView
+                android:id="@+id/tvProfileSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/profile_setting"
+                android:textColor="@color/cafe_text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Member Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/cafe_surface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/cafe_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/ic_check_circle"
+                        android:backgroundTint="@color/cafe_primary_container"
+                        android:contentDescription="Avatar"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_profile" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCardMemberName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/cafe_text_primary"
+                            android:textSize="16sp"
+                            tools:text="Budi Santoso" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/member_tier"
+                            android:textColor="@color/cafe_secondary"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Edit Name Input Field ("nama") -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProfileName"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="@string/hint_nama"
+                app:boxCornerRadiusBottomEnd="14dp"
+                app:boxCornerRadiusBottomStart="14dp"
+                app:boxCornerRadiusTopEnd="14dp"
+                app:boxCornerRadiusTopStart="14dp"
+                app:boxStrokeColor="@color/cafe_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/cafe_text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button ("Save") -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveProfile"
+                style="@style/Widget.CaffeShop.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/btn_save" />
+
+            <!-- Additional Useful Quick Actions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="Menu Tambahan"
+                android:textColor="@color/cafe_text_primary"
+                android:textSize="16sp" />
+
+            <!-- Riwayat Pesanan Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGoToHistory"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/btn_history"
+                android:textColor="@color/cafe_text_primary"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_history"
+                app:iconTint="@color/cafe_primary"
+                app:strokeColor="@color/cafe_border" />
+
+            <!-- Bantuan & FAQ Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGoToHelp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/btn_help"
+                android:textColor="@color/cafe_text_primary"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_info"
+                app:iconTint="@color/cafe_primary"
+                app:strokeColor="@color/cafe_border" />
+
+            <!-- Logout Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/btn_logout"
+                android:textColor="#D32F2F"
+                app:icon="@drawable/ic_logout"
+                app:iconTint="#D32F2F" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation Bar (Home, Order, Profile) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/cafe_surface"
+        app:elevation="8dp"
+        app:itemIconTint="@color/cafe_primary"
+        app:itemTextColor="@color/cafe_primary"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

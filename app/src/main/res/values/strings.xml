@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Caffe Shop</string>
+    <string name="brand_title">Kopi dan Nyemil</string>
+    <string name="splash_tagline">Get a taste of your wish</string>
+    <string name="start_now">Start now</string>
+    
+    <!-- Auth Gateway -->
+    <string name="auth_signup_title">Sign up</string>
+    <string name="auth_signup_subtitle">Join as a member &amp; experience more fun from various meal at mesen_gube marketing app</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+    
+    <!-- Login Screen -->
+    <string name="login_user_title">Login User</string>
+    <string name="hint_username">username</string>
+    <string name="hint_password">password</string>
+    <string name="dont_have_account">Belum punya akun? Register di sini</string>
+    
+    <!-- Register Screen -->
+    <string name="register_title">Register</string>
+    <string name="hint_full_name">nama lengkap</string>
+    <string name="already_have_account">Sudah punya akun? Login di sini</string>
+    
+    <!-- Home Screen -->
+    <string name="greeting_format">Halo %1$s,</string>
+    <string name="default_user_name">Nama</string>
+    <string name="section_makanan">Makanan</string>
+    <string name="section_makanan_minuman">Makanan &amp; Minuman</string>
+    <string name="search_hint">Cari kopi atau camilan...</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_order">Order</string>
+    <string name="nav_profile">Profile</string>
+    <string name="filter_all">Semua</string>
+    <string name="filter_coffee">Kopi</string>
+    <string name="filter_snack">Nyemil</string>
+    <string name="filter_non_coffee">Non-Kopi</string>
+    
+    <!-- Profile Screen -->
+    <string name="profile_saya">Profile Saya</string>
+    <string name="profile_setting">Profile Setting</string>
+    <string name="hint_nama">nama</string>
+    <string name="btn_save">Save</string>
+    <string name="member_tier">Gold Coffee Enthusiast</string>
+    <string name="btn_history">Riwayat Pesanan</string>
+    <string name="btn_help">Bantuan &amp; Info Kafe</string>
+    <string name="btn_logout">Logout</string>
+    <string name="profile_saved_success">Profil berhasil disimpan!</string>
+    
+    <!-- Order & Address Screen -->
+    <string name="order_address_title">Alamat</string>
+    <string name="hint_address">Alamat</string>
+    <string name="hint_address_detail">Patokan atau detail lengkap</string>
+    <string name="btn_order_and_send">Order dan Kirim</string>
+    <string name="order_summary">Ringkasan Pesanan</string>
+    <string name="payment_method">Metode Pembayaran</string>
+    <string name="payment_qris">QRIS / E-Wallet (GoPay, OVO)</string>
+    <string name="payment_cod">Tunai / COD di Tempat</string>
+    <string name="payment_bank">Transfer Bank (BCA / Mandiri)</string>
+    <string name="delivery_fee">Ongkos Kirim</string>
+    <string name="discount_voucher">Diskon Voucher</string>
+    <string name="total_payment">Total Pembayaran</string>
+    
+    <!-- Confirmation Screen -->
+    <string name="confirmation_ok">OK</string>
+    <string name="confirmation_message">Terima kasih sudah memesan\ntunggu aja sebentar kurir kami segera mengantarkan pesananmu!</string>
+    <string name="btn_oke">Oke</string>
+    <string name="btn_track_order">Lacak Status Kurir</string>
+    <string name="estimated_time">Estimasi sampai: 15–25 Menit</string>
+    
+    <!-- Extended: Product Detail -->
+    <string name="title_detail_menu">Detail Menu</string>
+    <string name="temperature_choice">Pilihan Suhu</string>
+    <string name="temp_iced">Iced (Dingin)</string>
+    <string name="temp_hot">Hot (Hangat)</string>
+    <string name="sugar_level">Tingkat Manis</string>
+    <string name="sugar_normal">Normal Sugar</string>
+    <string name="sugar_less">Less Sugar (50%)</string>
+    <string name="sugar_none">No Sugar</string>
+    <string name="size_choice">Ukuran</string>
+    <string name="size_regular">Regular</string>
+    <string name="size_large">Large (+Rp 5.000)</string>
+    <string name="btn_add_to_cart">Tambah ke Keranjang</string>
+    <string name="btn_buy_now">Beli Sekarang</string>
+    
+    <!-- Extended: Cart Screen -->
+    <string name="cart_title">Keranjang Belanja</string>
+    <string name="cart_empty_title">Keranjang Anda Masih Kosong</string>
+    <string name="cart_empty_desc">Yuk pilih menu kopi atau camilan favoritmu terlebih dahulu!</string>
+    <string name="btn_explore_menu">Jelajahi Menu</string>
+    <string name="promo_code_hint">Masukkan Kode Promo (e.g. DISKONKOPI)</string>
+    <string name="btn_apply_promo">Gunakan</string>
+    <string name="promo_applied_success">Voucher Rp 10.000 berhasil digunakan!</string>
+    <string name="promo_invalid">Kode voucher tidak valid.</string>
+    <string name="btn_checkout">Lanjut ke Pengiriman</string>
+    
+    <!-- Extended: Tracking Screen -->
+    <string name="tracking_title">Pelacakan Pesanan</string>
+    <string name="step_received">Pesanan Diterima oleh Barista</string>
+    <string name="step_preparing">Kopi &amp; Camilan Sedang Diracik</string>
+    <string name="step_delivering">Kurir Sedang Mengantar Pesanan</string>
+    <string name="step_completed">Pesanan Tiba di Alamatmu</string>
+    <string name="courier_name">Kurir: Mas Andi Pratama (Honda Beat Hitam)</string>
+    
+    <!-- Validation Errors -->
+    <string name="error_empty_fields">Harap lengkapi semua bidang isian</string>
+    <string name="error_short_password">Password minimal 4 karakter</string>
+    <string name="error_short_name">Nama lengkap minimal 3 karakter</string>
+</resources>

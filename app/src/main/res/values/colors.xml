@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm Artisan Cafe Material 3 Palette -->
+    <color name="cafe_primary">#5D4037</color>
+    <color name="cafe_primary_dark">#3E2723</color>
+    <color name="cafe_primary_container">#EFEBE9</color>
+    <color name="cafe_on_primary">#FFFFFF</color>
+    
+    <color name="cafe_secondary">#D97736</color>
+    <color name="cafe_secondary_light">#FBE9E7</color>
+    <color name="cafe_secondary_container">#FFCCBC</color>
+    
+    <color name="cafe_background">#FCFBF9</color>
+    <color name="cafe_surface">#FFFFFF</color>
+    <color name="cafe_surface_variant">#F5F2EB</color>
+    
+    <color name="cafe_text_primary">#1C1917</color>
+    <color name="cafe_text_secondary">#78716C</color>
+    <color name="cafe_text_hint">#A8A29E</color>
+    <color name="cafe_border">#E7E2DA</color>
+    
+    <color name="cafe_success">#2E7D32</color>
+    <color name="cafe_success_container">#E8F5E9</color>
+    <color name="cafe_success_light">#A5D6A7</color>
+    
+    <color name="cafe_badge_bg">#FFF3E0</color>
+    <color name="cafe_badge_text">#E65100</color>
+    
+    <color name="cafe_card_selected">#F7EFE9</color>
+    <color name="cafe_star">#FFB300</color>
+    
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
