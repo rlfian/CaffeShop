@@ -15,9 +15,11 @@
 
 | Informasi | Detail |
 | :--- | :--- |
-| **Nama Lengkap** | Robby Hertansyah |
-| **Mata Kuliah** | Pengembangan / Pemrograman Aplikasi Mobile (PAM) |
-| **Perguruan Tinggi** | Universitas / Institut |
+| **Nama Lengkap** | Rio Alfian |
+| **NIM** | 1247050145 |
+| **Program Studi** | Teknik Informatika |
+| **Perguruan Tinggi** | UIN Sunan Gunung Djati Bandung |
+| **Mata Kuliah** | Pengembangan Aplikasi Mobile (PAM) |
 | **Tahun Akademik** | 2026/2027 |
 
 ---
